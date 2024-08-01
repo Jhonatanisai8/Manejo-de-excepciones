@@ -7,6 +7,8 @@ public class EjemploExepciones {
             System.out.println(division);
         } catch (ArithmeticException e) {
             System.out.println(" Capturamos la excepcion en tiempo de ejecucion: "+e.getMessage());
+        }finally{
+            System.out.println("Ejecuta siempre con o sin excepcion");
         }
         System.out.println("Fin Programa");
     }
