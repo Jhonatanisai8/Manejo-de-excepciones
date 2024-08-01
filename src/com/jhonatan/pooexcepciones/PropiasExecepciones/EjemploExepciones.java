@@ -7,16 +7,16 @@ public class EjemploExepciones {
 
         Calculadora calculadora = new Calculadora();
         String valor = JOptionPane.showInputDialog("Ingrese un entero: ");
-        int divisor = Integer.parseInt(valor);
-        double division = calculadora.dividir(10, divisor);
+        int divisor;
+        double division;
         try {
-            // dividor = Integer.parseInt(valor);
-            // int division = 10 / dividor;
+            divisor = Integer.parseInt(valor);
+            division = calculadora.dividir(10, divisor);
             System.out.println("Resultado: " + division);
         } catch (NumberFormatException en) {
             System.out.println("Se detecto una excepcion, ingrese un valor numerico: " + en.getMessage());
             main(args);
-        } catch (ArithmeticException e) {
+        } catch (DivisionPorZeroException e) {
             System.out.println(" Capturamos la excepcion en tiempo de ejecucion: " + e.getMessage());
             main(args);
         } finally {
