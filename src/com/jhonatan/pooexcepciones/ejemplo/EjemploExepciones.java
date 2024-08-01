@@ -3,7 +3,7 @@ package com.jhonatan.pooexcepciones.ejemplo;
 public class EjemploExepciones {
     public static void main(String[] args) {
         try {
-            int division = 10 / 0;
+            int division = 10 / 5;
             System.out.println(division);
         } catch (ArithmeticException e) {
             System.out.println(" Capturamos la excepcion en tiempo de ejecucion: "+e.getMessage());
@@ -14,3 +14,4 @@ public class EjemploExepciones {
     }
 
 }
+         
