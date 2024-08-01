@@ -5,7 +5,7 @@ public class EjemploExepciones {
         try {
             int division = 10 / 0;
             System.out.println(division);
-        } catch (Exception e) {
+        } catch (ArithmeticException e) {
             System.out.println(" Capturamos la excepcion en tiempo de ejecucion: "+e.getMessage());
         }
         System.out.println("Fin Programa");
