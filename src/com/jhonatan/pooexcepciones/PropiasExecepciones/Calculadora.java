@@ -8,4 +8,10 @@ public class Calculadora {
         }
         return numerador / (double) dividendo;
     }
+
+    public double dividir(String numerdador,String divisor) throws DivisionPorZeroException{
+        int num = Integer.parseInt(numerdador);
+        int div = Integer.parseInt(divisor);
+        return this.dividir(num, div);
+    } 
 }
