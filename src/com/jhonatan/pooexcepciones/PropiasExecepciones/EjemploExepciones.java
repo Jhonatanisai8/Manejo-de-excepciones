@@ -19,9 +19,6 @@ public class EjemploExepciones {
 
             System.out.println("Resultado de la division 02: " + division02);
             // primera excepcion
-        } catch (NumberFormatException en) {
-            System.out.println("Se detecto una excepcion, ingrese un valor numerico: " + en.getMessage());
-            // segunda excepcion
         } catch (DivisionPorZeroException e) {
             System.out.println(" Capturamos la excepcion en tiempo de ejecucion: " + e.getMessage());
         } catch (FormatoNumeroException ecp) {
